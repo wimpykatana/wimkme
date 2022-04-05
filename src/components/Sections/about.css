@@ -1,0 +1,110 @@
+section#about {
+  min-height: 90vh;
+  padding: 20px 60px 0;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.aboutHeadline {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 0 50px 0;
+}
+
+.aboutHeadline::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 1px;
+  background-color: var(--color-primary-tint);
+  margin-left: 20px;
+}
+
+.aboutHeadline span {
+  margin-right: 10px;
+}
+
+.aboutContentHolder {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  font-family: var(--fontFamily-sans);
+}
+
+ul.skill {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+ul.skill > li {
+  list-style: none;
+  margin: 0 20px 0 0;
+}
+
+ul.skill > li::before {
+  content: "▹";
+  margin: 0 5px 0 0;
+  color: var(--color-primary);
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pp-holder {
+  position: relative;
+}
+
+.pp-holder img {
+  border: 5px solid var(--color-secondary);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation-name: pphoverout;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+}
+
+.pp-holder:hover img {
+  animation-name: pphover;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  border: 15px solid var(--color-primary);
+}
+
+@keyframes pphover {
+  from {
+    border: 5px solid var(--color-secondary);
+  }
+  to {
+    border: 15px solid var(--color-primary);
+  }
+}
+
+@keyframes pphoverout {
+  from {
+    border: 15px solid var(--color-primary);
+  }
+  to {
+    border: 5px solid var(--color-secondary);
+  }
+}
+
+.simpleLink {
+  color: var(--color-secondary);
+}
+
+.simpleLink:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 /* CSS Custom Properties Definitions */
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -27,11 +27,8 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
-    Times, serif;
+  --fontFamily-sans: "Roboto", sans-serif;
+  --fontFamily-serif: "Merriweather", serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -54,12 +51,19 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
+  --color-primary: rgba(212, 210, 54, 1);
+  --color-secondary: rgb(46, 161, 61);
+  --color-third: rgb(152, 173, 212);
+  --color-primary-tint: rgba(212, 210, 54, 0.1);
+  --color-secondary-tint: rgba(46, 161, 61, 0.1);
+  --color-text: #dddddd;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #d1dce5;
+  --background-color: rgb(40, 44, 52);
+  --background-color-50: rgba(40, 44, 52, 05);
+  --background-color-dark: rgb(22, 24, 29);
 }
 
 /* HTML elements */
@@ -75,12 +79,15 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
 }
 
 footer {
@@ -230,12 +237,14 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 /* Custom classes */
@@ -319,6 +328,25 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+.secondary-color {
+  color: var(--color-secondary);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-primary);
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
@@ -329,5 +357,21 @@ a:focus {
   ul,
   ol {
     list-style-position: inside;
+  }
+}
+
+.showAnimation {
+  opacity: 1;
+  animation-name: showMe;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes showMe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

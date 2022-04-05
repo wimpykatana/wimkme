@@ -1,0 +1,87 @@
+section#experience {
+  max-width: 60%;
+  margin: 0 auto 500px;
+  font-family: var(--fontFamily-sans);
+  padding-top: 200px;
+}
+
+.experienceHeadline {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 0 50px 0;
+  justify-content: center;
+  font-family: var(--fontFamily-sans);
+  font-size: 2.5em;
+}
+
+.experienceHeadline span {
+  margin-right: 10px;
+  color: var(--color-secondary);
+}
+
+.experienceHeadline::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 1px;
+  background-color: var(--color-primary-tint);
+  margin-left: 20px;
+}
+
+.experienceContent {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 4fr;
+}
+
+.arrow {
+  font-size: 25px;
+}
+
+.company ul {
+  font-family: var(--fontFamily-sans);
+}
+
+.company ul li {
+  border-left: 2px solid var(--color-secondary);
+  list-style: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 20px;
+  width: auto;
+}
+
+.company ul li:hover {
+  background-color: var(--color-primary-tint);
+  border-left: 2px solid var(--color-primary);
+}
+
+.companyContentHolder .title {
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.companyContentHolder .timeToWorking {
+  font-size: 0.8em;
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+.jobDesc ul > li {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.jobDesc ul > li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
