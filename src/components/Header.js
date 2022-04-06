@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Helmet } from "react-helmet"
-import Logo from "./icons/logo"
+import Logo from "./icons/Logo"
 import { Link } from "gatsby"
 import "./header.css"
 
