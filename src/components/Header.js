@@ -45,7 +45,15 @@ const Header = () => {
                 <span className="num secondary-color">04.</span> Blog
               </Link>
             </li>
-            <li className="btn">RESUME</li>
+            <li className="btn">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/document/wimk.pdf"
+              >
+                RESUME
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -95,7 +103,16 @@ const Header = () => {
                   <span className="num secondary-color">04.</span> Blog
                 </Link>
               </li>
-              <li className="btn">Download My RESUME</li>
+              <li className="btn">
+                {" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/document/wimk.pdf"
+                >
+                  Download My RESUME
+                </a>
+              </li>
             </ul>
           </aside>
         </div>

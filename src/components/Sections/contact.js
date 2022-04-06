@@ -16,7 +16,7 @@ const contact = () => {
       <div className="btnHolder">
         <a
           className="btnSecondary"
-          href="mailto:recruit.wimk@gmail.com"
+          href="mailto:sayhi.wimk@gmail.com"
           target="_blank"
         >
           Say Hello !!!

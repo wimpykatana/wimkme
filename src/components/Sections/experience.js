@@ -20,11 +20,10 @@ const experience = () => {
             <div className="jobDesc">
               <ul>
                 <li>
-                  Working As freelancer and helping my friend to built his
-                  startup
+                  Working as freelancer and building a startup with my friend p
                 </li>
                 <li>
-                  Comunicate with client on weekly basis to find a solution for
+                  Communicate with client on weekly basis to find a solution for
                   their technology challenge and web development
                 </li>
                 <li>
@@ -46,20 +45,22 @@ const experience = () => {
         setActiveTabDisplay(
           <div className="companyContentHolder showAnimation">
             <div className="title">Full Stack Developer</div>
-            <div className="companyName">Teknologi Asia</div>
-            <div className="timeToWorking">2017 - December 2019</div>
+            <div className="companyName">Teknologi Asia, PT</div>
+            <div className="timeToWorking">April 2017 - December 2019</div>
             <div className="jobDesc">
               <ul>
-                <li>Write a modern and maintable code for elearing platform</li>
                 <li>
-                  Worked with a team of three people with backgroud as backend
+                  Write a modern and maintainable code for e-learing platform
+                </li>
+                <li>
+                  Worked with a team of three people with background as backend
                   developer, frontend developer and designer
                 </li>
                 <li>
-                  Help how the brand will do marketing and the brand direction
-                  as a platform
+                  Purpose an idea how the brand will do marketing and the brand
+                  direction as a platform
                 </li>
-                <li>Sugesting an idea for the feature for the brand</li>
+                <li>Suggesting an idea for the feature for the brand</li>
               </ul>
             </div>
           </div>
@@ -77,9 +78,9 @@ const experience = () => {
                   Working as a team for build an ecommerce using magento for
                   kemana.com client
                 </li>
-                <li>Help and Purpose the client to achive a good UI / UX</li>
+                <li>Purpose the client to achieve a good UI / UX</li>
                 <li>
-                  Comunicate with Client on weekly basis to report the progress
+                  Communicate with Client on weekly basis to report the progress
                   and give solution for the ecommerce
                 </li>
               </ul>
@@ -90,12 +91,13 @@ const experience = () => {
       case 4:
         setActiveTabDisplay(
           <div className="companyContentHolder showAnimation">
-            <div className="title">Software Enginner</div>
-            <div className="companyName">Sinar Bintang</div>
+            <div className="title">Software Engineer</div>
+            <div className="companyName">Sinar Bintang, PT</div>
             <div className="timeToWorking">2011 - 2015</div>
             <div className="jobDesc">
               <ul>
                 <li>Working as a team at Sinar Bintang Web Agency</li>
+                <li>Implement SEO and SMO for client marketing purpose</li>
                 <li>
                   Developed and maintained code for in-house and client websites
                   primarily using HTML, CSS, Sass, JavaScript, jQuery and
