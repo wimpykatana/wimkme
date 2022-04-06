@@ -104,10 +104,30 @@ section#hi p {
   padding: 20px;
   color: var(--color-secondary);
   cursor: pointer;
+  font-family: var(--fontFamily-sans);
 }
 
 .btnSecondary:hover,
 .btnSecondary:focus {
   background-color: var(--color-secondary-tint);
   color: var(--color-secondary);
+}
+
+
+@media (max-width: 768px){
+  section#hi{
+    padding: 0;
+  }
+  #hi .hiHolder{
+    width: 80%;
+  }
+  section#hi h1{
+    font-size: 2.5em;
+  }
+  .btnSecondary{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
 }

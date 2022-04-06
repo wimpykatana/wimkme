@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 import { Link } from "gatsby"
-import * as layoutWidthStyles from "./layoutWidth.module.css"
+import "./layoutWidth.css"
 
 const layoutWidth = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -23,7 +23,7 @@ const layoutWidth = ({ location, title, children }) => {
     )
   }
   return (
-    <div className={layoutWidthStyles.wrapper} data-is-root-path={isRootPath}>
+    <div className="wrapper" data-is-root-path={isRootPath}>
       <Header />
       <main>{children}</main>
       <Footer />

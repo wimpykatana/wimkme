@@ -30,7 +30,7 @@ const about = () => {
               target="_blank"
               className="simpleLink"
             >
-              at here.
+              here.
             </a>
           </p>
           <p style={{ marginBottom: "5px" }}>

@@ -1,8 +1,9 @@
 import React from "react"
+import "./hero.css"
 
 const hero = () => {
   return (
-    <section id="hi" className="showAnimation">
+    <section id="hi">
       <div className="hiHolder">
         <span className="hiText">Hi, my name is</span>
         <h1>Wimpy Katana.</h1>

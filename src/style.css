@@ -87,7 +87,7 @@ body {
   font-size: var(--fontSize-1);
   color: var(--color-text);
   background-color: var(--background-color);
-  scroll-behavior: smooth;
+  height: 100%;
 }
 
 footer {
@@ -375,3 +375,10 @@ a:focus {
     opacity: 1;
   }
 }
+
+.noScroll{
+  height: 100%;
+  overflow: hidden !important;
+}
+
+

@@ -108,3 +108,23 @@ ul.skill > li::before {
   color: var(--color-primary);
   text-decoration: underline;
 }
+
+@media (max-width: 850px){
+  section#about{
+    max-width: 80%;
+    padding: 20px 0 0;
+    margin-bottom: 150px;
+  }
+  #about .aboutHeadline{
+    font-size: 1.5em !important;
+  }
+
+  .aboutHeadline::after{
+    display: none;
+  }
+
+  .aboutContentHolder{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

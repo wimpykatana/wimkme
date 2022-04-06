@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { CgScrollH } from "react-icons/cg"
 import "./experience.css"
 
 const experience = () => {
@@ -44,8 +45,8 @@ const experience = () => {
       case 2:
         setActiveTabDisplay(
           <div className="companyContentHolder showAnimation">
-            <div className="title">Full Stack Develover</div>
-            <div className="companyName">Techonolgy Asia</div>
+            <div className="title">Full Stack Developer</div>
+            <div className="companyName">Teknologi Asia</div>
             <div className="timeToWorking">2017 - December 2019</div>
             <div className="jobDesc">
               <ul>
@@ -76,7 +77,7 @@ const experience = () => {
                   Working as a team for build an ecommerce using magento for
                   kemana.com client
                 </li>
-                <li>Help the client achive a good UI / UX as ecommerce</li>
+                <li>Help and Purpose the client to achive a good UI / UX</li>
                 <li>
                   Comunicate with Client on weekly basis to report the progress
                   and give solution for the ecommerce
@@ -96,7 +97,13 @@ const experience = () => {
               <ul>
                 <li>Working as a team at Sinar Bintang Web Agency</li>
                 <li>
-                  Built and shipped a wordpress website for Sinar Bintang client
+                  Developed and maintained code for in-house and client websites
+                  primarily using HTML, CSS, Sass, JavaScript, jQuery and
+                  WordPress
+                </li>
+                <li>
+                  Responsible for various browsers and mobile devices to ensure
+                  cross-browser compatibility and responsiveness{" "}
                 </li>
               </ul>
             </div>
@@ -122,19 +129,38 @@ const experience = () => {
       <div className="experienceContent">
         <div className="company">
           <ul>
-            <li data-id="1" onClick={companyClick}>
+            <li
+              data-id="1"
+              className={activeTab == 1 ? "active" : ""}
+              onClick={companyClick}
+            >
               Now
             </li>
-            <li data-id="2" onClick={companyClick}>
-              Teknology Asia
+            <li
+              data-id="2"
+              className={activeTab == 2 ? "active" : ""}
+              onClick={companyClick}
+            >
+              Teknologi Asia
             </li>
-            <li data-id="3" onClick={companyClick}>
+            <li
+              data-id="3"
+              className={activeTab == 3 ? "active" : ""}
+              onClick={companyClick}
+            >
               Kemana
             </li>
-            <li data-id="4" onClick={companyClick}>
+            <li
+              data-id="4"
+              className={activeTab == 4 ? "active" : ""}
+              onClick={companyClick}
+            >
               Sinar Bintang
             </li>
           </ul>
+          <div className="mobileScrollIcon">
+            <CgScrollH />
+          </div>
         </div>
         <div className="companyContent">{activeTabDisplay}</div>
       </div>

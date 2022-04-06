@@ -1,6 +1,6 @@
 section#experience {
   max-width: 60%;
-  margin: 0 auto 500px;
+  margin: 0 auto 200px;
   font-family: var(--fontFamily-sans);
   padding-top: 200px;
 }
@@ -61,6 +61,11 @@ section#experience {
   border-left: 2px solid var(--color-primary);
 }
 
+.company ul li.active {
+  background-color: var(--color-primary-tint);
+  border-left: 2px solid var(--color-primary);
+}
+
 .companyContentHolder .title {
   font-size: 2.2em;
   font-weight: 700;
@@ -84,4 +89,92 @@ section#experience {
   position: absolute;
   left: 0;
   color: var(--color-primary);
+}
+
+.mobileScrollIcon{
+  display: none;
+}
+
+@media (max-width: 850px){
+
+  .mobileScrollIcon{
+    display: flex;
+    justify-content: center;
+    color: var(--color-secondary);
+  }
+
+  section#experience{
+    margin-top: 50px;
+    max-width: 80%;
+    padding: 20px 0 0;
+    margin-bottom: 50px;
+  }
+
+  #experience .experienceHeadline{
+    font-size: 1.5em !important;
+    margin-bottom: 20px;
+  }
+
+  .experienceHeadline{
+    justify-content: flex-start;
+  }
+
+  .experienceHeadline::after{
+    display: none;
+  }
+
+  .experienceContent{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .company ul{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-bottom: 5px;
+  }
+
+  .company ul li{
+    width: auto;
+    border-top: 0;
+    border-left: 0;
+    min-width: 150px;
+    text-align: center;
+  }
+
+  .company ul li:hover {
+    background-color: var(--background-color);
+    border-top: 0;
+    border-left: 0;
+  }
+  
+  .company ul li.active {
+    background-color: var(--color-primary-tint);
+    border-top: 2px solid var(--color-primary);
+    border-left: 0;
+  }
+
+  .company ul::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--background-color-dark);
+  }
+  
+  .company ul::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: var(--background-color);
+  }
+  
+  .company ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    
+    background-color: var(--color-third);
+  }
+
+  .companyContentHolder .title{
+    font-size: 1.5em;
+  }
+
 }
