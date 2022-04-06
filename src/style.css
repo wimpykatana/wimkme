@@ -57,8 +57,8 @@
   --color-primary-tint: rgba(212, 210, 54, 0.1);
   --color-secondary-tint: rgba(46, 161, 61, 0.1);
   --color-text: #dddddd;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
+  --color-text-light: #26a686;
+  --color-heading: rgb(104, 130, 179);
   --color-heading-black: black;
   --color-accent: #d1dce5;
   --background-color: rgb(40, 44, 52);
@@ -127,7 +127,7 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  color: var(--color-third);
 }
 
 h2 {
@@ -238,7 +238,7 @@ table thead tr th {
 
 a {
   color: var(--color-text);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover,
@@ -382,3 +382,12 @@ a:focus {
 }
 
 
+footer .bio{
+  font-family: var(--fontFamily-serif);
+  font-size: 0.9em;
+  text-align: left;
+}
+
+footer .bio p{
+  padding: 5px 0 0 0;
+}

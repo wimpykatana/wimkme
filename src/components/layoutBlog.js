@@ -1,23 +1,37 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
+import Logo from "./icons/Logo"
+import Footer from "./Footer"
+import { IoMdArrowRoundBack } from "react-icons/io"
+import "./layoutBlog.css"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  const rootPath = `${__PATH_PREFIX__}/blog`
   const isRootPath = location.pathname === rootPath
   let header
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <div className="main-heading">
+        <div className="logoHolderBlog">
+          <Link to="/">
+            <Logo isColor={true} />
+          </Link>
+        </div>
+      </div>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <div className="header-link-home">
+        <div className="logoHolderBlog">
+          <Link to="/">
+            <Logo isColor={true} />
+          </Link>
+        </div>
+        <Link className="arrowLink" to="/blog">
+          <IoMdArrowRoundBack />
+        </Link>
+      </div>
     )
   }
 
@@ -25,11 +39,7 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer />
     </div>
   )
 }

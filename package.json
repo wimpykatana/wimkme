@@ -3,7 +3,7 @@
   "private": true,
   "description": "Wimpy Katana blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>, Wimpy Katana <wim.katana@gmail.com>",
+  "author": "Wimpy Katana <wim.katana@gmail.com>, Kyle Mathews <mathews.kyle@gmail.com>, ",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },

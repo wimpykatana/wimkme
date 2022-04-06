@@ -13,6 +13,8 @@
   width: 50px;
 }
 
+
+
 ul.menu-desktop {
   display: flex;
   flex-direction: row;
@@ -105,6 +107,7 @@ section#hi p {
   color: var(--color-secondary);
   cursor: pointer;
   font-family: var(--fontFamily-sans);
+  text-decoration: none;
 }
 
 .btnSecondary:hover,

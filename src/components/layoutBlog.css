@@ -1,0 +1,37 @@
+.header-link-home{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-third);
+    padding: 0 0 20px 0;
+}
+
+.header-link-home a{
+    width: 40px;
+}
+
+
+.main-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-third);
+    padding: 0 0 20px 0;
+}
+.logoHolderBlog{
+    width: 30px;
+    
+}
+
+.main-heading .logoHolderBlog{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.main-heading .logoHolderBlog a{
+    width: 100%;
+    padding: 0 10px;
+}

@@ -5,7 +5,7 @@
 ul.menu-mobile{
     margin-top: 100px;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
 }
@@ -13,6 +13,19 @@ ul.menu-mobile{
 ul.menu-mobile > li {
     list-style: none;
     margin-bottom: 25px;
+    padding-left: 25px;
+    font-family: var(--fontFamily-sans);
+}
+
+ul.menu-mobile > li:last-child{
+    
+}
+
+
+
+ul.menu-desktop > li > a,
+ul.menu-mobile > li > a{
+    text-decoration: none;
 }
 
 /********************************************************************************** MOBILE POTRAIT ********/

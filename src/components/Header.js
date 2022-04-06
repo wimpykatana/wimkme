@@ -19,7 +19,9 @@ const Header = () => {
       </Helmet>
       <div className="navHolder desktop">
         <div className="logoHolder">
-          <Logo isColor={true} />
+          <Link to="/">
+            <Logo isColor={true} />
+          </Link>
         </div>
         <div className="menuHolder">
           <ul className="menu-desktop">
@@ -93,7 +95,7 @@ const Header = () => {
                   <span className="num secondary-color">04.</span> Blog
                 </Link>
               </li>
-              <li className="btn">RESUME</li>
+              <li className="btn">Download My RESUME</li>
             </ul>
           </aside>
         </div>

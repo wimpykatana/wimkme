@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `wimk personal website`,
+    title: `Wimpy Katana Personal Website`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Wimpy Katana`,
+      summary: `who lives and works in Jakarta building useful web things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `wimpykatana`,
     },
   },
   plugins: [
@@ -35,6 +35,9 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
+              withWebp: true,
+              showCaptions: true,
+              quality: 100,
             },
           },
           {
