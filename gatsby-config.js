@@ -3,15 +3,29 @@ module.exports = {
     title: `Wimpy Katana Personal Website`,
     author: {
       name: `Wimpy Katana`,
-      summary: `who lives and works in Jakarta building useful web things.`,
+      summary: `Software Enginner who lives and works in Jakarta building web things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Wimpy Katana Personal Website. Software Engineer who lives and work in Jakarta - Indonesia.`,
+    siteUrl: `https://wimk.me/`,
     social: {
       twitter: `wimpykatana`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-2G3WNJTQX7", // Google Analytics / GA
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -108,7 +122,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Wimpy Katana Blog RSS Feed",
           },
         ],
       },
@@ -116,15 +130,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Wimpy Katana Blog`,
+        short_name: `WimK`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#282c34`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-black.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,

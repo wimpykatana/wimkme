@@ -1,4 +1,5 @@
 import React from "react"
+import SocialMedia from "../socialmedia"
 import "./hero.css"
 
 const hero = () => {
@@ -14,6 +15,7 @@ const hero = () => {
           <br />
           And like to learn more about new tech
         </p>
+        <SocialMedia marginBottom="55" marginTop="25" />
         <a
           className="btnSecondary"
           href="https://www.youtube.com/channel/UClvHAgZLmLy0g243uq36EkA"

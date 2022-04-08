@@ -89,7 +89,7 @@ section#hi h1 {
 
 section#hi p {
   width: 90%;
-  margin-bottom: 80px;
+  margin-bottom: 0;
 }
 
 #about .aboutHeadline {

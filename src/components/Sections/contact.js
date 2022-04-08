@@ -1,4 +1,5 @@
 import React from "react"
+import SocialMedia from "../socialmedia"
 import "./contact.css"
 
 const contact = () => {
@@ -12,6 +13,16 @@ const contact = () => {
           always open. You can drop me a mail or just say hi, and i will reach
           you back, and Thank you!
         </p>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginBottom: "25px",
+        }}
+      >
+        <SocialMedia />
       </div>
       <div className="btnHolder">
         <a
