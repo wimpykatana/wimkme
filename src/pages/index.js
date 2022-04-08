@@ -12,7 +12,7 @@ const indexPage = ({ location, data }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Welcome to wimk website" />
+      <Seo title="Welcome to Wimpy Katana personal website" />
       <Hero />
       <About />
       <Experience />
