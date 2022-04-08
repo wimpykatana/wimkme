@@ -20,7 +20,7 @@ const experience = () => {
             <div className="jobDesc">
               <ul>
                 <li>
-                  Working as freelancer and building a startup with my friend p
+                  Working as freelancer and building a startup with my friend
                 </li>
                 <li>
                   Communicate with client on weekly basis to find a solution for
