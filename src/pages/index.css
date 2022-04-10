@@ -134,3 +134,32 @@ section#hi p {
     text-align: center;
   }
 }
+
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+  background-color: rgb(49,54,63);
+  text-shadow: none;
+  border-top: 2px solid var(--color-primary);
+}
+
+code[class*="language-"], pre[class*="language-"]{
+  color: #ababab;
+  text-shadow: none;
+
+}
+
+.token.atrule, .token.attr-value, .token.keyword{
+  color: rgb(198, 120, 220);
+}
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string{
+  color: #ababab;
+  background: none;
+}
+
+.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted{
+  color: rgb(209,154,102);
+}
+
+.token.function, .token.class-name{
+  color: rgb(97, 174, 238);
+}

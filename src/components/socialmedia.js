@@ -19,7 +19,12 @@ const socialmedia = ({ marginBottom, marginTop }) => {
     flexDirection: "row",
   }
 
-  const smitemli = {
+  const smitemlinomr = {
+    listStyle: "none",
+    marginBottom: "0",
+  }
+
+  const smitemlimr = {
     listStyle: "none",
     marginRight: "25px",
     marginBottom: "0",
@@ -28,25 +33,25 @@ const socialmedia = ({ marginBottom, marginTop }) => {
   return (
     <div style={holder}>
       <ul style={smitemul}>
-        <li style={smitemli}>
+        <li style={smitemlimr}>
           <Link to="https://twitter.com/wimpykatana" target="_blank">
             <FaTwitter />
           </Link>
         </li>
 
-        <li style={smitemli}>
+        <li style={smitemlimr}>
           <Link to="https://www.instagram.com/wimpy.katana/" target="_blank">
             <FaInstagram />
           </Link>
         </li>
 
-        <li style={smitemli}>
+        <li style={smitemlimr}>
           <Link to="https://github.com/wimpykatana" target="_blank">
             <FaGithub />
           </Link>
         </li>
 
-        <li style={smitemli}>
+        <li style={smitemlimr}>
           <Link
             to="https://www.youtube.com/channel/UClvHAgZLmLy0g243uq36EkA"
             target="_blank"
@@ -55,7 +60,7 @@ const socialmedia = ({ marginBottom, marginTop }) => {
           </Link>
         </li>
 
-        <li style={smitemli}>
+        <li style={smitemlinomr}>
           <Link to="https://codepen.io/wimpy" target="_blank">
             <FaCodepen />
           </Link>

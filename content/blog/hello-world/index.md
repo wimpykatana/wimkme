@@ -1,5 +1,5 @@
 ---
-title: Hello World !!!
+title: Hello World
 date: "2022-04-06T16:39:03.284Z"
 description: "Hello World, This is my first post, in this blog i will share information about me..."
 ---
