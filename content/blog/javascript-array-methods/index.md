@@ -6,7 +6,7 @@ description: "Javascript Array Methods every developer should know and use it wh
 
 When we develop or build an app using Javascript we will dealing with an Array and we will sometimes will modify that array so in this post i will share Javascript array methods
 
-### 1. Array.map()
+## Array.map()
 
 Method will create a new array with new result for each element inside the array from a provided function.
 
@@ -15,7 +15,7 @@ const number = [1, 2, 3, 4, 5]
 number.map(x => x * 2) // result: [ 2, 4, 6, 8, 10 ]
 ```
 
-### 2. Array.filter()
+## Array.filter()
 
 Method will create a new array with new result that pass or valid from the provided function.
 
@@ -29,7 +29,7 @@ const evenNumber = number.filter(x => x % 2 === 0)
 // evenNumber result: [ 2, 4 ]
 ```
 
-### 3. Array.reduce()
+## Array.reduce()
 
 Method will returns an accumulation value by a function from the Array.
 
@@ -40,7 +40,7 @@ const totalVal = number.reduce((prev, curr) => prev + curr, initVal)
 // totalVal result: 15
 ```
 
-### 4. Array.reduceRight()
+## Array.reduceRight()
 
 This method is basicly same like `Array.reduce()` but this one accumulating from right to left.
 
@@ -51,7 +51,7 @@ const totalVal = number.reduceRight((prev, curr) => prev + curr, initVal)
 // totalVal result: 15
 ```
 
-### 5. Array.fill()
+## Array.fill()
 
 Method will changes all the element inside the array with static value.
 
@@ -68,7 +68,7 @@ number.fill(0, 1) // [ 1, 0, 0, 0, 0 ]
 number.fill(0) // [ 0, 0, 0, 0, 0 ]
 ```
 
-### 6. Array.find()
+## Array.find()
 
 Method will returns the first element inside the array that pass or valid from the provided function.
 
@@ -80,7 +80,7 @@ const found = number.find(x => x % 2 === 0)
 //found result: 2
 ```
 
-### 7. Array.indexOf()
+## Array.indexOf()
 
 Method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
@@ -91,7 +91,7 @@ number.indexOf(3) // 2
 number.indexOf(6) // -1
 ```
 
-### 8. Array.lastIndexOf()
+## Array.lastIndexOf()
 
 Method returs the last index at which a given element can be found in the array, or -1 if it is not present.
 
@@ -101,7 +101,7 @@ number.lastIndexOf(1) // 5
 number.lastIndexOf(6) // -1
 ```
 
-### 9. Array.findIndex()
+## Array.findIndex()
 
 Method returs the index of the first element in the array that pass or valid from the provided function, otherwise it will return -1 if no element pass or valid
 
@@ -112,7 +112,7 @@ const number = [1, 3, 2, 3, 4, 5]
 number.findIndex(x => x % 2 === 0) // 2
 ```
 
-### 10. Array.includes()
+## Array.includes()
 
 Method returns true if the values is inside the array and return false if not
 
@@ -122,7 +122,7 @@ number.includes(1) // true
 number.includes(6) // false
 ```
 
-### 11. Array.pop()
+## Array.pop()
 
 Method will remove the last element of the array and will change the length of the array
 
@@ -132,7 +132,7 @@ number.pop() // 5
 number //[ 1, 2, 3, 4 ]
 ```
 
-### 12. Array.push()
+## Array.push()
 
 Method that add new element at the end of array and will change the length of the array
 
@@ -142,7 +142,7 @@ number.push(1) // 6
 number // [1, 2, 3, 4, 5, 1]
 ```
 
-### 13 Array.shift()
+## Array.shift()
 
 Method will remove the first element of the array and will change the length of the array
 
@@ -152,7 +152,7 @@ number.shift() // 1
 number //[ 2, 3, 4, 5 ]
 ```
 
-### 14 Array.unshift()
+## Array.unshift()
 
 Method that add one or more new element at the start of array and will change the length of the array
 
@@ -162,7 +162,7 @@ number.unshift(0, 1) // 7
 number //[ 0, 1, 1, 2, 3, 4, 5 ]
 ```
 
-### 15 Array.splice()
+## Array.splice()
 
 Method will changes the content of the array by removing or replacing the existing element.
 
@@ -182,7 +182,7 @@ number.splice(1, 1, 1)
 number // [ 1, 1, 4, 5]
 ```
 
-### 16 Array.slice()
+## Array.slice()
 
 Method returns a [shallow copy](https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy) of array into new array object
 
@@ -194,7 +194,7 @@ newArr // [ 1, 2 ]
 number // [1, 2, 3, 4, 5]
 ```
 
-### 17 Array.Join()
+## Array.Join()
 
 Method joins all the element inside the array into one string
 
@@ -203,7 +203,7 @@ const number = [1, 2, 3, 4, 5]
 number.join(" ") // '1 2 3 4 5'
 ```
 
-### 18 Array.reverse()
+## Array.reverse()
 
 Method thats will reverse all the element inside the array
 
@@ -212,7 +212,7 @@ const number = [1, 2, 3, 4, 5]
 number.reverse() // [ 5, 4, 3, 2, 1 ]
 ```
 
-### 19 Array.sort()
+## Array.sort()
 
 Method that will sort the element of array, default sort order is ascending
 
@@ -225,7 +225,7 @@ number.sort() // [ 1, 2, 3, 5, 7 ]
 number.sort((a, b) => b - a) // [ 7, 5, 3, 2, 1 ]
 ```
 
-### 20 Array.some()
+## Array.some()
 
 Method returns true if at least one values is pass or valid the provided function and return false if not
 
@@ -235,7 +235,7 @@ const number = [2, 5, 4, 8, 6]
 number.some(x => x % 2 === 1) // true
 ```
 
-### 21 Array.every()
+## Array.every()
 
 Method returns true if all values is pass or valid the provided function and return false if not
 
@@ -245,7 +245,7 @@ const number = [2, 10, 4, 8, 6]
 number.some(x => x % 2 === 0) // true
 ```
 
-### 22 Array.from()
+## Array.from()
 
 Methods create a new [shallow copy](https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy) array instance from an array-like or iterable object.
 
@@ -255,7 +255,7 @@ Array.from("hello") // [ 'h', 'e', 'l', 'l', 'o' ]
 Array.from([1, 2, 3, 4, 5], x => x * 2) // [ 2, 4, 6, 8, 10 ]
 ```
 
-### 23 Array.of()
+## Array.of()
 
 Methods create a new Array instance from a variable number of arguments.
 
@@ -265,7 +265,7 @@ Array.of(1, 2, 3, 4, 5) // [ 1, 2, 3, 4, 5 ]
 Array.of(1) // [1]
 ```
 
-### 24 Array.isArray()
+## Array.isArray()
 
 Methods returns a true if given value is an Array
 
@@ -274,7 +274,7 @@ Array.isArray([1, 2, 3, 4, 5]) // true
 Array.isArray(1) // false
 ```
 
-### 25 Array.at()
+## Array.at()
 
 Methods returns value from given index
 
@@ -285,7 +285,7 @@ number.at(-1) // 5
 number.at(-2) // 4
 ```
 
-### 26 Array.copyWithin()
+## Array.copyWithin()
 
 Method copy an array to another location in the same array without modifying the array length
 
@@ -299,7 +299,7 @@ const number1 = [1, 2, 3, 4, 5]
 number1.copyWithin(0, 2, 4) // [ 3, 4, 3, 4, 5 ]
 ```
 
-### 27 Array.flat()
+## Array.flat()
 
 Methods create a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
@@ -311,7 +311,7 @@ const val2 = [1, 2, [[3, [4, 5]]]]
 val2.flat(2) // [ 1, 2, 3, [ 4, 5 ] ]
 ```
 
-### 28 Array.flatMap()
+## Array.flatMap()
 
 ```js
 let number = [1, 2, 3, 4, 5]
