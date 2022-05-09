@@ -17,12 +17,6 @@ ul.menu-mobile > li {
     font-family: var(--fontFamily-sans);
 }
 
-ul.menu-mobile > li:last-child{
-    
-}
-
-
-
 ul.menu-desktop > li > a,
 ul.menu-mobile > li > a{
     text-decoration: none;

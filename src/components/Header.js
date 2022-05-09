@@ -7,10 +7,8 @@ import "./header.css"
 const Header = () => {
   const [menuMobielIsOpen, setMenuMobielIsOpen] = useState(false)
   const menuMobileAction = () => {
-    console.log("click")
     setMenuMobielIsOpen(!menuMobielIsOpen)
   }
-  console.log(menuMobielIsOpen)
   return (
     <>
       <Helmet>
