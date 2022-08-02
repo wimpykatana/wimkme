@@ -18,7 +18,7 @@ const about = () => {
             technology, and make me to become software engineer.
           </p>
           <p>
-            I have serveral expreince working with many company and learn more
+            I have serveral experience working with many company and learn more
             in web development world by helping them. And i hope i can still
             create and learn more things in web development for my career.
           </p>
