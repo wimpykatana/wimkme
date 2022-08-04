@@ -2,126 +2,64 @@ import React, { useEffect, useState } from "react"
 import { CgScrollH } from "react-icons/cg"
 import "./experience.css"
 
+const joblist = [
+  {
+    id: 1,
+    nama: 'Now',
+    title: 'Independent Worker',
+    periode: 'January 2020 - Present',
+    desc: [
+      'Working as freelancer and building a startup with my friend',
+      'Communicate with client on weekly basis to find a solution for their technology challenge and web development',
+      'Work with a variety of different languages, platforms, frameworks, and content management systems such as Python, JavaScript, Gatsby, React, Express, Node, WordPress, Puppeteer, MongoDb, and Web3',
+      'Sharing my knowledge at Social Media',
+      'Building Web3 Project ( still working in progress )'
+    ]
+  },
+  { 
+    id: 2,
+    nama: 'Teknologi Asia',
+    title: 'Full Stack Developer',
+    periode: 'April 2017 - December 2019',
+    desc: [
+      'Write a modern and maintainable code for e-learing platform',
+      'Worked with a team of three people with background as backend developer, frontend developer and designer',
+      'Purpose an idea how the brand will do marketing and the brand direction as a platform',
+      'Suggesting an idea for the feature for the brand'
+    ]
+  },
+  { 
+    id: 3,
+    nama: 'Kemana',
+    title: 'Magento Developer',
+    periode: '2015 - Maret 2017',
+    desc:[
+      'Working as a team for build an ecommerce using magento for kemana.com client',
+      'Purpose the client to achieve a good UI / UX',
+      'Communicate with Client on weekly basis to report the progress and give solution for their ecommerce'
+    ]
+  },
+  { 
+    id: 4,
+    nama: 'Sinar Bintang',
+    title: 'Software Engineer',
+    periode: '2011 - 2015',
+    desc:[
+      'Working as a team at Sinar Bintang Web Agency',
+      'Implement SEO and SMO for client marketing purpose',
+      'Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, jQuery and WordPress',
+      'Responsible for various browsers and mobile devices to ensure cross-browser compatibility and responsiveness'
+    ]
+  },
+];
+
 const experience = () => {
   const [activeTab, setActiveTab] = useState(1)
-  const [activeTabDisplay, setActiveTabDisplay] = useState()
 
   const companyClick = e => {
     const id = Number(e.target.dataset.id)
     setActiveTab(id)
   }
-  const showActiveTab = () => {
-    switch (activeTab) {
-      case 1:
-        setActiveTabDisplay(
-          <div className="companyContentHolder showAnimation">
-            <div className="title">Independent Worker</div>
-            <div className="timeToWorking">January 2020 - Present</div>
-            <div className="jobDesc">
-              <ul>
-                <li>
-                  Working as freelancer and building a startup with my friend
-                </li>
-                <li>
-                  Communicate with client on weekly basis to find a solution for
-                  their technology challenge and web development
-                </li>
-                <li>
-                  Work with a variety of different languages, platforms,
-                  frameworks, and content management systems such as JavaScript,
-                  Gatsby, React, Express, Node, WordPress, Puppeteer, MongoDb,
-                  and Heroku
-                </li>
-                <li>Sharing my knowledge at Social Media</li>
-                <li>
-                  Building music streaming app ( still working in progress )
-                </li>
-              </ul>
-            </div>
-          </div>
-        )
-        break
-      case 2:
-        setActiveTabDisplay(
-          <div className="companyContentHolder showAnimation">
-            <div className="title">Full Stack Developer</div>
-            <div className="companyName">Teknologi Asia, PT</div>
-            <div className="timeToWorking">April 2017 - December 2019</div>
-            <div className="jobDesc">
-              <ul>
-                <li>
-                  Write a modern and maintainable code for e-learing platform
-                </li>
-                <li>
-                  Worked with a team of three people with background as backend
-                  developer, frontend developer and designer
-                </li>
-                <li>
-                  Purpose an idea how the brand will do marketing and the brand
-                  direction as a platform
-                </li>
-                <li>Suggesting an idea for the feature for the brand</li>
-              </ul>
-            </div>
-          </div>
-        )
-        break
-      case 3:
-        setActiveTabDisplay(
-          <div className="companyContentHolder showAnimation">
-            <div className="title">Magento Developer</div>
-            <div className="companyName">kemana.com</div>
-            <div className="timeToWorking">2015 - Maret 2017</div>
-            <div className="jobDesc">
-              <ul>
-                <li>
-                  Working as a team for build an ecommerce using magento for
-                  kemana.com client
-                </li>
-                <li>Purpose the client to achieve a good UI / UX</li>
-                <li>
-                  Communicate with Client on weekly basis to report the progress
-                  and give solution for the ecommerce
-                </li>
-              </ul>
-            </div>
-          </div>
-        )
-        break
-      case 4:
-        setActiveTabDisplay(
-          <div className="companyContentHolder showAnimation">
-            <div className="title">Software Engineer</div>
-            <div className="companyName">Sinar Bintang, PT</div>
-            <div className="timeToWorking">2011 - 2015</div>
-            <div className="jobDesc">
-              <ul>
-                <li>Working as a team at Sinar Bintang Web Agency</li>
-                <li>Implement SEO and SMO for client marketing purpose</li>
-                <li>
-                  Developed and maintained code for in-house and client websites
-                  primarily using HTML, CSS, Sass, JavaScript, jQuery and
-                  WordPress
-                </li>
-                <li>
-                  Responsible for various browsers and mobile devices to ensure
-                  cross-browser compatibility and responsiveness{" "}
-                </li>
-              </ul>
-            </div>
-          </div>
-        )
-        break
-    }
-  }
-
-  useEffect(() => {
-    showActiveTab()
-  }, [])
-
-  useEffect(() => {
-    showActiveTab()
-  }, [activeTab])
 
   return (
     <section id="experience">
@@ -131,40 +69,35 @@ const experience = () => {
       <div className="experienceContent">
         <div className="company">
           <ul>
-            <li
-              data-id="1"
-              className={activeTab == 1 ? "active" : ""}
-              onClick={companyClick}
-            >
-              Now
-            </li>
-            <li
-              data-id="2"
-              className={activeTab == 2 ? "active" : ""}
-              onClick={companyClick}
-            >
-              Teknologi Asia
-            </li>
-            <li
-              data-id="3"
-              className={activeTab == 3 ? "active" : ""}
-              onClick={companyClick}
-            >
-              Kemana
-            </li>
-            <li
-              data-id="4"
-              className={activeTab == 4 ? "active" : ""}
-              onClick={companyClick}
-            >
-              Sinar Bintang
-            </li>
+            {joblist.map(({id, nama}) => (
+              <li
+                data-id={id}
+                className={activeTab == id ? "active" : ""}
+                onClick={companyClick}
+                key={nama}
+              >
+                {nama}
+              </li>
+            ))}
           </ul>
           <div className="mobileScrollIcon">
             <CgScrollH />
           </div>
         </div>
-        <div className="companyContent">{activeTabDisplay}</div>
+        <div className="companyContent">
+          <div className="companyContentHolder showAnimation">
+            <div className="title">{joblist[activeTab - 1].title}</div>
+            <div className="companyName">{activeTab === 1 ? '' : joblist[activeTab - 1].nama}</div>
+            <div className="timeToWorking">{joblist[activeTab - 1].periode}</div>
+            <div className="jobDesc">
+              <ul>
+                {joblist[activeTab - 1].desc.map((val)=>(
+                  <li key={ val }> { val } </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
