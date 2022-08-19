@@ -242,7 +242,7 @@ Method returns true if all values is pass or valid the provided function and ret
 ```js
 const number = [2, 10, 4, 8, 6]
 //all value is even number
-number.some(x => x % 2 === 0) // true
+number.every(x => x % 2 === 0) // true
 ```
 
 ## Array.from()
