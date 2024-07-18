@@ -51,7 +51,7 @@ const about = () => {
               className="bio-avatar"
               layout="fixed"
               formats={["auto", "webp", "avif"]}
-              src="../../images/pp.jpeg"
+              src="../../images/photo2.jpg"
               width={300}
               height={300}
               quality={95}

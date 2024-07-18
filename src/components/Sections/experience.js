@@ -5,7 +5,30 @@ import "./experience.css"
 const joblist = [
   {
     id: 1,
-    nama: 'Now',
+    nama: 'Inphosoft Indonesia',
+    title: 'Application Consultant ',
+    periode: 'September 2022 - Present',
+    desc: [
+      'Leading few project that was handle by Inphosoft Indonesia',
+      'Developing web-app and mobile-app for client',
+      'Manage developer resources for Inphosoft project',
+      'Collaborate with business team and other singapore Government Agency',
+    ]
+  },
+  {
+    id: 2,
+    nama: 'Fomolabs',
+    title: 'React.Js Developer',
+    periode: 'January 2022 - September 2022',
+    desc: [
+      ' Developing web3 application Using react.js',
+      'Leading a small team with two people',
+      'Collaborate with business team to find and fix UI / UX',
+    ]
+  },
+  {
+    id: 3,
+    nama: 'Self Employed',
     title: 'Independent Worker',
     periode: 'January 2020 - Present',
     desc: [
@@ -17,8 +40,8 @@ const joblist = [
     ]
   },
   { 
-    id: 2,
-    nama: 'Teknologi Asia',
+    id: 4,
+    nama: 'Trimegah Sekuritas Indonesia',
     title: 'Full Stack Developer',
     periode: 'April 2017 - December 2019',
     desc: [
@@ -29,7 +52,7 @@ const joblist = [
     ]
   },
   { 
-    id: 3,
+    id: 5,
     nama: 'Kemana',
     title: 'Magento Developer',
     periode: '2015 - Maret 2017',
@@ -40,7 +63,7 @@ const joblist = [
     ]
   },
   { 
-    id: 4,
+    id: 6,
     nama: 'Sinar Bintang',
     title: 'Software Engineer',
     periode: '2011 - 2015',
@@ -53,7 +76,7 @@ const joblist = [
   },
 ];
 
-const experience = () => {
+const Experience = () => {
   const [activeTab, setActiveTab] = useState(1)
 
   const companyClick = e => {
@@ -103,4 +126,4 @@ const experience = () => {
   )
 }
 
-export default experience
+export default Experience
