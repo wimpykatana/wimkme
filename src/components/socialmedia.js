@@ -6,6 +6,7 @@ import {
   FaGithub,
   FaYoutube,
   FaCodepen,
+  FaLinkedin,
 } from "react-icons/fa"
 
 const socialmedia = ({ marginBottom, marginTop }) => {
@@ -33,6 +34,13 @@ const socialmedia = ({ marginBottom, marginTop }) => {
   return (
     <div style={holder}>
       <ul style={smitemul}>
+
+        <li style={smitemlimr}>
+          <Link to="https://www.linkedin.com/in/wimpykatana/" target="_blank">
+            <FaLinkedin />
+          </Link>
+        </li>
+
         <li style={smitemlimr}>
           <Link to="https://twitter.com/wimpykatana" target="_blank">
             <FaTwitter />
@@ -65,6 +73,9 @@ const socialmedia = ({ marginBottom, marginTop }) => {
             <FaCodepen />
           </Link>
         </li>
+
+       
+
       </ul>
     </div>
   )
