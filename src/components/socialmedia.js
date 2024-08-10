@@ -42,7 +42,7 @@ const socialmedia = ({ marginBottom, marginTop }) => {
         </li>
 
         <li style={smitemlimr}>
-          <Link to="https://twitter.com/wimpykatana" target="_blank">
+          <Link to="https://x.com/wimpykatana" target="_blank">
             <FaTwitter />
           </Link>
         </li>

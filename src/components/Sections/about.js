@@ -11,24 +11,22 @@ const about = () => {
       <div className="aboutContentHolder">
         <div className="aboutContent">
           <p>
-            My name is Wimpy Katana, I like building website and enjoy to create
-            new things for web development. I have an interest with web
-            development and technology since i have my first PC when i was kid.
-            Because of thats interest make me want to learn more about web and
-            technology, and make me to become software engineer.
+            <span style={{fontWeight: "bold"}}>My name is Wimpy Katana.</span><br />
+            I have a deep passion for web development, which began when I got my first PC as a child.
+            This early interest sparked a lifelong journey into the world of technology and led me to pursue a career as a software engineer.
           </p>
           <p>
-            I have serveral experience working with many company and learn more
-            in web development world by helping them. And i hope i can still
-            create and learn more things in web development for my career.
+          Over the years, I've had the opportunity to work with several companies, 
+          where I've honed my skills and expanded my knowledge in web development. 
+          I'm committed to continuously learning and creating innovative solutions in this ever-evolving field.
           </p>
           <p>
-            Right now i`m also trying to share my knowledge for web development
-            in my youtube channel. Maybe you can visit it{" "}
+            Currently, I'm sharing my expertise in web development through my YouTube channel, where I provide insights and tutorials. You can check it out{" "}
             <a
               href="https://www.youtube.com/channel/UClvHAgZLmLy0g243uq36EkA"
               target="_blank"
               className="simpleLink"
+              rel="noreferrer"
             >
               here.
             </a>
@@ -44,6 +42,10 @@ const about = () => {
             <li>Wordpress</li>
             <li>Pupppeteer</li>
           </ul>
+          <p></p>
+          <p>
+            Look forward to continuing my journey in web development, constantly learning, and contributing to the field.
+          </p>
         </div>
         <div className="picture">
           <div className="pp-holder">

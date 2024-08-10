@@ -12,6 +12,8 @@ section#about {
   align-items: center;
   flex-direction: row;
   margin: 0 0 50px 0;
+  font-family: var(--fontFamily-serif);
+  font-size: 2.5em;
 }
 
 .aboutHeadline::after {
@@ -25,6 +27,7 @@ section#about {
 
 .aboutHeadline span {
   margin-right: 10px;
+  color: var(--color-secondary);
 }
 
 .aboutContentHolder {
@@ -57,7 +60,6 @@ ul.skill > li::before {
 
 .picture {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 

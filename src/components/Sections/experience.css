@@ -1,8 +1,9 @@
 section#experience {
+
+  min-height: 90vh;
+  padding: 20px 60px 0;
   max-width: 60%;
-  margin: 0 auto 200px;
-  font-family: var(--fontFamily-sans);
-  padding-top: 200px;
+  margin: 0 auto;
 }
 
 .experienceHeadline {
@@ -12,8 +13,7 @@ section#experience {
   align-items: center;
   flex-direction: row;
   margin: 0 0 50px 0;
-  justify-content: center;
-  font-family: var(--fontFamily-sans);
+  font-family: var(--fontFamily-serif);
   font-size: 2.5em;
 }
 
@@ -32,7 +32,7 @@ section#experience {
 }
 
 .experienceContent {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   gap: 50px;
@@ -43,6 +43,7 @@ section#experience {
   font-size: 25px;
 }
 
+.companyContentHolder,
 .company ul {
   font-family: var(--fontFamily-sans);
 }
@@ -64,12 +65,26 @@ section#experience {
 .company ul li.active {
   background-color: var(--color-primary-tint);
   border-left: 2px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .companyContentHolder .title {
   font-size: 2.2em;
   font-weight: 700;
   letter-spacing: 1.5px;
+  font-family: var(--fontFamily-serif);
+  color: var(--color-third);
+}
+
+.companyContentHolder .companyName{
+  color: var(--color-secondary);
+}
+
+.companyContentHolder .companyName span{
+  color: var(--color-primary);
+}
+.companyContentHolder .companyName .name{
+  color: var(--color-text);
 }
 
 .companyContentHolder .timeToWorking {
