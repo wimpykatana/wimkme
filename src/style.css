@@ -235,12 +235,18 @@ table thead tr th {
 }
 
 /* Link */
+article.blog-post a{
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
 
 a {
   color: var(--color-text);
   text-decoration: underline;
 }
 
+article.blog-post a:hover,
+article.blog-post a:focus, 
 a:hover,
 a:focus {
   text-decoration: none;
