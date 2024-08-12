@@ -1,6 +1,6 @@
 ---
 title: Introduction to Web Components
-date: "2024-08-17T07:00:03.284Z"
+date: "2024-08-12T07:00:03.284Z"
 description: "Web Components are a powerful set of web standards that allow developers to create reusable, encapsulated custom HTML elements. By combining technologies like Custom Elements, Shadow DOM, and HTML Templates, Web Components enable you to build modular and self-contained UI elements that can be used across different projects and frameworks."
 ---
 
