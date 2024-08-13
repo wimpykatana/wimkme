@@ -15,62 +15,45 @@ Custom Elements allow you to define your own HTML tags and specify their behavio
 
 ```js
 /* Define a custom element */
-import React from 'react';
+class MyTag extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `<h3>${this.innerText}</h3>`;
+  } 
+}
 
-const MyCustomElement = () => {
-  return (
-    <p>This is a custom element!</p>
-  );
-};
-
-export default MyCustomElement;
+// register component
+customElements.define( 'my-tag', MyTag );
 ```
 
-You can now use this component in your React application like any other React component:
+You can now use this component in your html page like any other web component:
 
-```js
-/* Use the custom element in your app */
-import React from 'react';
-import MyCustomElement from './MyCustomElement'; //import custom element
-
-const App = () => {
-  return (
-    <div>
-      <h1>Welcome to My App</h1>
-      <MyCustomElement /> //add custom element here
-    </div>
-  );
-};
-
-export default App;
+```html
+<!-- Create a new web component using <my-tag></my-tag> -->
+<my-tag>Hello world</my-tag>
 ```
+or click link to see the demo >> [codepen demo](https://codepen.io/wimpy/pen/GRbOoZZ)
 
-This example creates a new HTML element called <MyCustomElement> that displays a simple text. You can use this custom element in your React application just like any other HTML element.
+This example creates a new HTML element called <my-tag> that displays a simple text. You can use this custom element in your web application just like any other HTML element.
+
+
 
 2. **Shadow DOM**:
 The Shadow DOM provides encapsulation by allowing developers to attach a "shadow" DOM tree to an element, which is separate from the main DOM tree. This ensures that the styles and scripts within the shadow DOM do not affect the rest of the page, and vice versa.
 
 ```js
-import React, { useRef, useEffect } from 'react';
+class ShadowTag extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `<h3 style="color:blue; font-size:3em;">${this.innerText}</h3>`;
+  } 
+}
 
-const MyShadowElement = () => {
-  const shadowHostRef = useRef(null);
-
-  useEffect(() => {
-    const shadowHost = shadowHostRef.current;
-    if (shadowHost) {
-      const shadowRoot = shadowHost.attachShadow({ mode: 'open' });
-      shadowRoot.innerHTML = `<p style="color: blue;">This text is in a shadow DOM!</p>`;
-    }
-  }, []);
-
-  return <div ref={shadowHostRef}></div>;
-};
-
-export default MyShadowElement;
+// register component
+customElements.define( 'shadow-tag', ShadowTag );
 ```
 
-or click link to see the code >> [sample code](https://codesandbox.io/s/sandbox/elated-noyce-59hwwl)
+or click link to see the demo >> [codepen demo](https://codepen.io/wimpy/pen/mdZqVWE)
 
 Explanation:
 - useRef Hook: The `useRef` hook is used to create a reference to the div element that will host the shadow DOM.
