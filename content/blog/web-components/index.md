@@ -54,13 +54,7 @@ class ShadowTag extends HTMLElement {
 // register component
 customElements.define( 'shadow-tag', ShadowTag );
 ```
-
 or click link to see the demo >> [codepen demo](https://codepen.io/wimpy/pen/mdZqVWE)
-
-Explanation:
-- useRef Hook: The `useRef` hook is used to create a reference to the div element that will host the shadow DOM.
-- useEffect Hook: The `useEffect` hook is used to run the code that attaches the shadow DOM after the component has been rendered.
-- Shadow DOM: Inside the `useEffect` hook, the shadow DOM is attached to the div element, and the inner HTML is set to display the text with the specified style.
 
 3. **HTML Templates**:
 HTML Templates allow you to define reusable chunks of HTML that can be cloned and inserted into the DOM as needed. This is useful for creating complex UI components that need to be reused multiple times.
