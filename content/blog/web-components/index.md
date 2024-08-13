@@ -2,7 +2,10 @@
 title: Introduction to Web Components
 date: "2024-08-12T07:00:03.284Z"
 description: "Web Components are a powerful set of web standards that allow developers to create reusable, encapsulated custom HTML elements. By combining technologies like Custom Elements, Shadow DOM, and HTML Templates, Web Components enable you to build modular and self-contained UI elements that can be used across different projects and frameworks."
+image: https://wimpykatana.netlify.app/images/webcomponent.png
 ---
+
+![Web Components](https://wimpykatana.netlify.app/images/webcomponent.png)
 
 As web development continues to evolve, the need for reusable, maintainable, and framework components has become increasingly important. Web Components offer a powerful solution to this problem, providing a set of standards that allow developers to create custom, reusable HTML elements. In this post, we'll explore the advantages of using Web Components and how they can be integrated into web applications with practical examples.
 

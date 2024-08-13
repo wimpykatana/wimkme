@@ -253,6 +253,11 @@ a:focus {
   color: var(--color-primary);
 }
 
+article.blog-post img{
+  max-width: 100%;
+  height: auto;
+}
+
 /* Custom classes */
 
 .global-wrapper {
