@@ -4,11 +4,10 @@ date: "2024-08-12T07:00:03.284Z"
 description: "Web Components are a powerful set of web standards that allow developers to create reusable, encapsulated custom HTML elements. By combining technologies like Custom Elements, Shadow DOM, and HTML Templates, Web Components enable you to build modular and self-contained UI elements that can be used across different projects and frameworks."
 ---
 
-As web development continues to evolve, the need for reusable, maintainable, and framework components has become increasingly important. Web Components offer a powerful solution to this problem, providing a set of standards that allow developers to create custom, reusable HTML elements. In this post, we'll explore the advantages of using Web Components and how they can be integrated into React applications with practical examples.
+As web development continues to evolve, the need for reusable, maintainable, and framework components has become increasingly important. Web Components offer a powerful solution to this problem, providing a set of standards that allow developers to create custom, reusable HTML elements. In this post, we'll explore the advantages of using Web Components and how they can be integrated into web applications with practical examples.
 
 ## What are Web Components?
-
-Web Components are a set of web standards that allow developers to create reusable, encapsulated custom HTML elements. They consist of four main technologies:
+Web Components are a set of web standards that allow developers to create reusable, encapsulated custom HTML elements. By combining technologies like Custom Elements, Shadow DOM, and HTML Templates, Web Components enable you to build modular and self-contained UI elements that can be used across different projects and frameworks.
 
 1. **Custom Elements**: 
 Custom Elements allow you to define your own HTML tags and specify their behavior. These elements can be simple (like a custom button) or complex (like an entire widget), and they can be used in any HTML document just like standard elements.
