@@ -119,7 +119,7 @@ section#hi p {
     font-size: 2.5em;
   }
   .btnSecondary{
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     display: block;
     text-align: center;
