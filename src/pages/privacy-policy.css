@@ -1,0 +1,14 @@
+section#privacy-policy {
+    min-height: 90vh;
+    padding: 20px 60px 0;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+@media (max-width: 850px){
+    section#privacy-policy{
+        max-width: 80%;
+        padding: 20px 0 0;
+        margin-bottom: 150px;
+    }
+}
