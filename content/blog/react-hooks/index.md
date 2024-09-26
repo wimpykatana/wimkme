@@ -8,6 +8,9 @@ React Hooks are special functions that let you use features like state and lifec
 React Hooks were introduced in React 16.8, transforming how developers build components and manage state in functional components. This article will explain key React Hooks `useState`, `useEffect`, `useContext`, `useRef`, `useReducer`, `useMemo`, `useCallback`, `useLayoutEffect` and also custom hooks with examples of how to use them in your projects.
 
 # useState: Managing Local Component State
+**What is it?**
+`useState` is a React Hook that allows you to add state to functional components. It returns an array with two elements: the current state value and a function to update it.
+
 **Why Use It?**
 `useState` is used to add local state to functional components. It replaces the need for `this.state` in class-based components and provides a cleaner, more intuitive API.
 
@@ -37,6 +40,9 @@ function Counter() {
 Now, every time you click the button, the count goes up by 1.
 
 # useEffect: Handling Side Effects
+**What is it?**
+`useEffect` is a React Hook that allows you to perform side effects in functional components. It runs after every render and can be used for data fetching, subscriptions, timers, and more.
+
 **Why Use It?**
 `useEffect` allows functional components to handle side effects such as fetching data, setting up subscriptions, or manually changing the DOM.
 
@@ -79,10 +85,13 @@ function DocumentTitle() {
 In this example, the document title updates every time the count changes.
 
 # useRef: Keeping a Value Without Rerendering
+**What is it?**
+`useRef` is a React Hook that allows you to keep a mutable value in the component without causing a re-render.
+
 **Why Use It?**
 `useRef` lets you hold onto a value that doesn’t need to change the UI when updated. It's often used to access DOM elements like input fields.
 
-**Why Use It?**
+**When Use It?**
 If you need to work with elements in the DOM, like focusing an input field, `useRef` helps you do that.
 
 **How to Use It:**
@@ -116,6 +125,9 @@ In this example, clicking the button will focus the input field.
 
 **Why Use It?**
 If your state logic is more complex (like having multiple related values or actions), `useReducer` is better than `useState`.
+
+**When to Use It?**
+Use `useReducer` when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.
 
 **How to Use It:**
 ```jsx
@@ -156,6 +168,9 @@ This is a counter with both increment and decrement buttons, using more advanced
 
 **Why Use It?**
 If you want to use the same data in many components (like a theme or user information), `useContext` makes it easy.
+
+**When to Use It?**
+Use `useContext` when you have data that needs to be shared across multiple components without passing props through each level.
 
 **How to Use It:**
 ```jsx
@@ -214,6 +229,9 @@ In this example, the background color changes based on the theme value.
 **Why Use It?**
 If you pass functions to child components, `useCallback` helps prevent unnecessary re-renders by remembering the function.
 
+**When to Use It?**
+Use `useCallback` when you need to pass a function to a child component that relies on values from the parent component.
+
 **How to Use It:**
 ```jsx
 const memoizedFunction = useCallback(() => {
@@ -264,6 +282,9 @@ export default Counter;
 **Why Use It?**
 If you have a function that takes a long time to run, you can use `useMemo` to only recalculate when certain values change.
 
+**When to Use It?**
+Use `useMemo` when you need to memoize the result of an expensive calculation and only recompute it when the dependencies change.
+
 **How to Use It:**
 ```jsx
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
@@ -313,8 +334,11 @@ export default App;
 - Dependencies: The second argument to `useMemo` is an array of dependencies. In this case, the computation is memoized until the `num` value changes.
 
 # useLayoutEffect: Synchronous Side Effects
-**Why Use It?**
+**What is it?**
 `useLayoutEffect` is similar to `useEffect`, but it fires synchronously after all DOM mutations. It can be used when you need to measure the DOM or trigger synchronous updates.
+
+**Why Use It?**
+`useLayoutEffect` is useful when you need to perform DOM manipulations that require synchronous updates, such as measuring the layout of elements.
 
 **When to Use It?**
 Use `useLayoutEffect` when you need to perform DOM manipulations or measurements before the browser has painted the screen.
@@ -364,6 +388,9 @@ export default App;
 - Dependencies: The second argument to `useLayoutEffect` is an array of dependencies. In this case, the effect runs whenever the `count` value changes.
 
 # Custom Hooks: Reusing Logic Across Components
+**What is it?**
+Custom hooks are functions that encapsulate reusable logic and can be shared across multiple components.
+
 **Why Use It?**
 Custom hooks allow you to extract reusable logic from components, making the code more modular and maintainable.
 
