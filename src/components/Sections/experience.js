@@ -5,9 +5,20 @@ import "./experience.css"
 const joblist = [
   {
     id: 1,
+    nama: 'Self Employed',
+    title: 'Independent Worker',
+    periode: 'January 2020 - Present',
+    desc: [
+      'Developed a startup as a freelancer, achieving a client satisfaction rate of over 90%.',
+      'Communicated with clients weekly to identify and resolve technology challenges, resulting in a 25% reduction in project turnaround time.',
+      'Utilized various programming languages and frameworks including JavaScript, Gatsby, React, and Node to enhance web development projects, improving site performance by 30%.'
+    ]
+  },
+  {
+    id: 2,
     nama: 'Inphosoft Indonesia',
     title: 'Application Consultant',
-    periode: 'September 2022 - Present',
+    periode: 'September 2022 - September 2024',
     desc: [
       'Leading few project that was handle by Inphosoft IndonesiaLead multiple projects for Inphosoft Indonesia, resulting in a 30% increase in project delivery efficiency',
       'Developed a web application and mobile application that improved user engagement by 25%.',
@@ -18,7 +29,7 @@ const joblist = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     nama: 'Fomolabs',
     title: 'React.Js Developer',
     periode: 'January 2022 - September 2022',
@@ -26,17 +37,6 @@ const joblist = [
       'Developed a web3 application using React.js, enhancing user engagement by 30%.',
       'Led a small team of two, completing projects ahead of schedule by 15%.',
       'Collaborated with the business team to identify and resolve UI/UX issues, improving user satisfaction ratings by 25%',
-    ]
-  },
-  {
-    id: 3,
-    nama: 'Self Employed',
-    title: 'Independent Worker',
-    periode: 'January 2020 - Present',
-    desc: [
-      'Developed a startup as a freelancer, achieving a client satisfaction rate of over 90%.',
-      'Communicated with clients weekly to identify and resolve technology challenges, resulting in a 25% reduction in project turnaround time.',
-      'Utilized various programming languages and frameworks including JavaScript, Gatsby, React, and Node to enhance web development projects, improving site performance by 30%.'
     ]
   },
   { 
