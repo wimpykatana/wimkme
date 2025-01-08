@@ -5,20 +5,9 @@ import "./experience.css"
 const joblist = [
   {
     id: 1,
-    nama: 'Self Employed',
-    title: 'Independent Worker',
-    periode: 'January 2020 - Present',
-    desc: [
-      'Developed a startup as a freelancer, achieving a client satisfaction rate of over 90%.',
-      'Communicated with clients weekly to identify and resolve technology challenges, resulting in a 25% reduction in project turnaround time.',
-      'Utilized various programming languages and frameworks including JavaScript, Gatsby, React, and Node to enhance web development projects, improving site performance by 30%.'
-    ]
-  },
-  {
-    id: 2,
     nama: 'Inphosoft Indonesia',
     title: 'Application Consultant',
-    periode: 'September 2022 - September 2024',
+    periode: 'September 2022 - Now',
     desc: [
       'Leading few project that was handle by Inphosoft IndonesiaLead multiple projects for Inphosoft Indonesia, resulting in a 30% increase in project delivery efficiency',
       'Developed a web application and mobile application that improved user engagement by 25%.',
@@ -29,18 +18,18 @@ const joblist = [
     ]
   },
   {
-    id: 3,
+    id: 2,
     nama: 'Fomolabs',
     title: 'React.Js Developer',
-    periode: 'January 2022 - September 2022',
+    periode: 'January 2020 - September 2022',
     desc: [
       'Developed a web3 application using React.js, enhancing user engagement by 30%.',
       'Led a small team of two, completing projects ahead of schedule by 15%.',
       'Collaborated with the business team to identify and resolve UI/UX issues, improving user satisfaction ratings by 25%',
     ]
   },
-  { 
-    id: 4,
+  {
+    id: 3,
     nama: 'Trimegah Sekuritas Indonesia',
     title: 'Full Stack Developer',
     periode: 'April 2017 - December 2019',
@@ -51,21 +40,21 @@ const joblist = [
       'Suggested innovative features for the brand, contributing to a 15% increase in user satisfaction ratings.'
     ]
   },
-  { 
-    id: 5,
+  {
+    id: 4,
     nama: 'Kemana',
     title: 'Magento Developer',
     periode: '2015 - Maret 2017',
-    desc:[
+    desc: [
       'Collaborated with a team to build an eCommerce platform using Magento for a client, resulting in a 30% increase in user engagement.'
     ]
   },
-  { 
-    id: 6,
+  {
+    id: 5,
     nama: 'Sinar Bintang',
     title: 'Software Engineer',
     periode: '2011 - 2015',
-    desc:[
+    desc: [
       'Collaborated with a team at Sinar Bintang Web Agency to enhance project delivery efficiency by 20%.',
       'Implemented SEO and SMO strategies that increased client website traffic by 30%.',
       'Developed and maintained code for in-house and client websites using HTML, CSS, Sass, JavaScript, jQuery, and WordPress, resulting in a 25% improvement in site load times.',
@@ -90,7 +79,7 @@ const Experience = () => {
       <div className="experienceContent">
         <div className="company">
           <ul>
-            {joblist.map(({id, nama}) => (
+            {joblist.map(({ id, nama }) => (
               <li
                 data-id={id}
                 className={activeTab == id ? "active" : ""}
@@ -99,7 +88,7 @@ const Experience = () => {
               >
                 {nama}
               </li>
-              
+
             ))}
           </ul>
           <div className="mobileScrollIcon">
@@ -112,8 +101,8 @@ const Experience = () => {
             <div className="companyName">{joblist[activeTab - 1].periode} <span>@</span> <span className="name">{joblist[activeTab - 1].nama}</span> </div>
             <div className="jobDesc">
               <ul>
-                {joblist[activeTab - 1].desc.map((val)=>(
-                  <li key={ val }> { val } </li>
+                {joblist[activeTab - 1].desc.map((val) => (
+                  <li key={val}> {val} </li>
                 ))}
               </ul>
             </div>
